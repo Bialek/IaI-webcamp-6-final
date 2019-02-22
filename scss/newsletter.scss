@@ -1,0 +1,93 @@
+#newsletter {
+    & {
+        --clr-grey: #38393B;
+        --clr-light-grey: #9E9E9E;
+        background: url("../img/news_bg.png") center / cover no-repeat;
+        padding: 2rem 0;
+    }
+    
+    #news-title {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    
+    #news-title > h2 {
+        color: var(--clr-grey);
+        font-family: "Lora", serif;
+        font-size: 3rem;
+        font-weight: normal;
+    }
+    
+    #news-title > a {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    #news-list {
+        display: flex;
+    }
+    
+    .news-single {
+        background: white;
+        display: flex;
+        padding: 1rem;
+        transition: box-shadow 1s;
+    }
+    
+    .news-single:hover {
+        box-shadow: 0 0.5rem 0.5rem var(--clr-light-grey);
+    }
+    
+    .news-single-image {
+        align-self: center;
+    }
+    
+    .news-single-description {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+    }
+    
+    .news-single-description > small {
+        color: var(--clr-light-grey);
+    }
+    
+    .news-single-description > h3 {
+        font-family: "Lora", serif;
+        margin-bottom: 1rem;
+    }
+    
+    .news-single-description > p {
+        margin-bottom: 1rem;
+        flex-grow: 1;
+    }
+    
+    .news-single-description > button {
+        align-self: flex-start;
+        background: var(--clr-grey);
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 1rem 1.5rem;
+        text-transform: uppercase;
+        transition: background-color, 1s;
+    }
+    
+    .news-single-description > button:hover {
+        background: var(--clr-light-grey);
+    }
+    
+    @media screen and (max-width: 979px) {
+        #news-list {
+            flex-direction: column;
+        }
+    
+        .item-wrapper.col-1-2 {
+            width: 100%;
+            flex: 0 0 100%;
+            padding-right: 15px;
+            padding-bottom: 1rem;
+        }
+    }
+}

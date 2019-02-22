@@ -1,0 +1,292 @@
+header {
+    i {
+        font-size: 2em;
+    }
+    .blok{
+        background-color: #2a2d34;
+        padding: 7px 0;
+        color:whitesmoke;
+
+
+
+    }
+
+    .blok a {
+        color: #fff;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+    }
+
+
+.wyszukiwarka{
+    height:30px;
+}
+
+
+
+
+    .logo{
+        width:100%;
+        img {
+            margin: 0 auto;
+        }
+
+    }
+
+    .col-1-3 {
+        width: 33.3333%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333%;
+        flex: 0 0 33.3333%;
+    }
+
+    .ulubioneCena{
+       display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+    .ulubione {
+        color: grey;
+        font-size:10px;
+        @media screen and (max-width: 757px) {
+            display: none;
+        }
+    }
+
+
+ .basket_price{
+    display: flex;
+     font-weight: bold;
+     justify-content: center;
+     align-items: center;
+ }
+
+    .button {
+        background-color: white;
+        color: black;
+        border: none;
+
+        right: 0;
+
+    }
+    .price {
+        @media screen and (max-width: 757px) {
+            display: none;
+        }
+    }
+form {
+    border: 2px solid lightgray;
+    max-width: 324px;
+    display: flex;
+    @media screen and (max-width: 757px) {
+        display: none;
+    }
+}
+
+    input {
+        border:none;
+        outline: none;
+        padding: 15px;
+            width: 100%;
+    }
+
+
+    #mobileTrigger {
+        flex: 0 0 30px;
+        width: 30px;
+        height: 24px;
+        position: relative;
+        cursor: pointer;
+        span {
+            position: absolute;
+            background-color: #000;
+            width: 100%;
+            height: 4px;
+            transition: all ease-in-out .3s;
+            top: 13px;
+            left: 0px; 
+            &:first-child {
+                top: 0;
+            }
+            &:last-child {
+                top: 26px;
+            }
+        }
+        &.open {
+            span {
+                position: absolute;
+                background-color: #000;
+                width: 100%;
+                &:first-child {
+                    top: 13px;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    transform: rotate(-45deg);
+                }
+                &:last-child {
+                    opacity: 0;
+                }
+            }
+        }
+        @media screen and (min-width: 757px) {
+            display: none;
+        }
+    }
+
+    div.blok a:link, div.blok a:visited
+    {
+        color: white;
+        text-decoration: none;
+    }
+
+
+
+
+    div.blok a:hover, div.blok a:active
+    {
+        color: blue;
+
+    }
+
+
+
+
+
+    /***************NAV****************************/
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+    nav>ul>li{
+
+        margin-top:1px;
+
+
+    }
+    nav>ul>li>a{
+        display:block;
+        text-transform: uppercase;
+        font-size:15px;
+        color:black;
+        text-align:center;
+        font-weight: bold;
+        line-height: 74px;
+
+    }
+
+
+    nav>ul>li>ul{
+        display:none;
+    }
+
+
+    nav ul{
+        list-style: none;
+    }
+
+    nav>ul>li:nth-of-type(1){
+        width: 164px;
+
+    }
+    nav>ul>li:nth-of-type(2){
+
+        width: 160px;
+    }
+
+    nav>ul>li:nth-of-type(3){
+        width: 160px;
+    }
+
+    nav>ul>li:nth-of-type(4){
+        width: 120px;
+    }
+
+    nav>ul>li:nth-of-type(5){
+        width: 110px;
+    }
+
+    nav>ul>li:nth-of-type(6){
+        width: 128px;
+    }
+
+    nav>ul>li:nth-of-type(7){
+        width: 138px;
+    }
+
+
+
+
+
+
+    nav>ul>li:hover>ul{
+        width: 600px;
+        height:400px;
+        background-color:white;
+        border: 1px solid white;
+        padding: 10px;
+        box-shadow: 1px 13px 8px 10px floralwhite;
+        font-size: 18px;
+
+
+    }
+
+
+    nav>ul>li>ul>li>ul>li>a:hover{
+        background-color: lightgray;
+        border-radius:2px;
+        text-transform: uppercase;
+
+    }
+
+    .ulubioneCena {
+        margin-right: 20px;
+        
+        i {
+            font-size: 2.5em;
+        }
+        span {
+            font-size: 1.3em;
+        }
+    }
+    .basket_price {
+        
+        
+        i {
+            font-size: 2.5em;
+        }
+        span {
+            font-size: 1.3em;
+            font-weight: 900;
+        }
+    }
+
+    @media screen and (max-width: 757px) {
+        .blok {
+            display: flex;
+        }
+
+        form {
+            width: auto;
+        }
+        nav{
+            display: none;
+        }
+    }
+
+}
+
+
+
+
+
+
+
